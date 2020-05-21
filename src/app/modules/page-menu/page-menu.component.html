@@ -1,0 +1,51 @@
+<app-header [imgHeader]="img" [titleHeader]="title" [modulo]="'menu'"></app-header>
+
+<div class="row text-center">
+    <div class="col-12 tittle-menu ">
+      BIENVENIDO
+    </div>
+    <div class="col-12">
+      <h1>Usuario</h1>
+    </div>
+    <div class="col-10 offset-1 mt-2">
+      <hr>
+    </div>
+    <div class="col-8 offset-2 tittle-sub mt-4 mb-4">
+      Boleta
+      <h1>{{ this.boleta_n }}</h1>
+    </div>
+    <div class="col-10 offset-1">
+        <hr>
+    </div>
+    <div class="col-10 offset-1 mt-2">
+      <div class="row">
+        <div class="col-4 animated bounceIn" (click)="openModalBoleta()">
+          <!-- <a href="#" data-toggle="modal" data-target="#modal-pdf"> -->
+            <img src="assets/img/boleta.svg">
+          <!-- </a> -->
+          <h3>Boleta</h3>
+        </div>
+        <div class="col-4 animated bounceIn" (click)="modalPrint()">
+          <!-- <a href="#" data-toggle="modal" data-target="#print-text"> -->
+            <img src="assets/img/ticket-cambio.svg">
+          <!-- </a> -->
+          <h3>Ticket de cambio</h3>
+        </div>
+        <div class="col-4 animated bounceIn" (click)="avanzar()">
+          <!-- <a href="#"> -->
+            <img src="assets/img/seguimiento.svg">
+          <!-- </a> -->
+          <h3>Seguimiento</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="botonera text-center">
+    <button (click)="logout()">
+      <i class="fas fa-chevron-circle-left"></i> SALIR
+    </button>
+  </div>
+
+<app-footer></app-footer>

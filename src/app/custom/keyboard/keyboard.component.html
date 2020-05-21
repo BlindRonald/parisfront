@@ -1,0 +1,28 @@
+<input 
+  [(ngModel)]="texto"
+  (click)="foco($event)" 
+  [type]="tipo" 
+  id="texto" 
+  class="form-control input-teclado"
+  [maxlength]="max"
+>
+
+<table class="table">
+    <tr *ngFor="let fila of teclas">
+        <td [attr.colspan]="tecla.ancho" *ngFor="let tecla of fila">
+          <button type="button" class="form-control teclado" (click)="setNgModel(tecla.accion, tecla.text)"
+            *ngIf="tecla.accion !== 'delete' && tecla.accion != 'upper' && tecla.accion != 'low'">
+            {{ tecla.text }}
+          </button>
+          <button type="button" class="form-control teclado" (click)="setNgModel(tecla.accion, tecla.text)" *ngIf="tecla.accion === 'delete'">
+            <i class="fas fa-backspace"></i>
+          </button>
+          <button type="button" class="form-control teclado" (click)="setNgModel(tecla.accion, tecla.text)" *ngIf="tecla.accion === 'upper'">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+          <button type="button" class="form-control teclado" (click)="setNgModel(tecla.accion, tecla.text)" *ngIf="tecla.accion === 'low'">
+            <i class="fas fa-arrow-down"></i>
+          </button>
+        </td>
+    </tr>
+</table>

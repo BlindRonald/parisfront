@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" 
+    (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+              
+  <div class="modal-body w-100">
+    <div class="text-center m-5 text-informacion" *ngIf="error">
+      ERROR, POR FAVOR CONTACTAR A PARIS.
+    </div>
+  ​
+    <pdf-viewer *ngIf="!error" [src]="src" [show-all]="false" [page]="page" [original-size]="true" [zoom]="zoom"
+    (after-load-complete)="afterLoadComplete($event)" [fit-to-page]="false" style="margin: auto;">
+  ​
+    </pdf-viewer>
+      
+    <div class="row w-100" *ngIf="buttons">
+      <div class="col-4 offset-2">
+        <button [ngClass]="{ volver: page === 1 }" class="btn-login mt-5 animated bounceIn delay-1s float-right" 
+        (click)="previousPage()" [disabled]="page === 1">
+          <img src="assets/img/back.png "> 
+        </button>
+      </div>
+      <div class="col-4">
+        <button [ngClass]="{ volver: totalPages === page }" class="btn-login mt-5 animated bounceIn delay-1s float-left" 
+        (click)="nextPage()" [disabled]="totalPages === page">
+          <img src="assets/img/back.png " class="fa-rotate-180"> 
+        </button>
+      </div>
+    </div>
+  </div>

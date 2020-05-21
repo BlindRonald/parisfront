@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="985" height="132" viewBox="0 0 985 132">
+  <g id="Grupo_2026" data-name="Grupo 2026" transform="translate(-59 -1509)">
+    <circle id="Elipse_127" data-name="Elipse 127" cx="41" cy="41" r="41" transform="translate(94 1509)" fill="#00b0eb"/>
+    <circle id="Elipse_128" data-name="Elipse 128" cx="41" cy="41" r="41" transform="translate(393 1509)" fill="#00b0eb"/>
+    <circle id="Elipse_130" data-name="Elipse 130" cx="41" cy="41" r="41" transform="translate(934 1509)" fill="#aaa"/>
+    <rect id="Rectángulo_2056" data-name="Rectángulo 2056" width="287" height="18" transform="translate(135 1541)" fill="#00b0eb"/>
+    <rect id="Rectángulo_2057" data-name="Rectángulo 2057" width="287" height="18" transform="translate(451 1541)" fill="#00b0eb"/>
+    <rect id="Rectángulo_2058" data-name="Rectángulo 2058" width="287" height="18" transform="translate(703 1541)" fill="#aaa"/>
+    <circle id="Elipse_129" data-name="Elipse 129" cx="41" cy="41" r="41" transform="translate(665 1509)" fill="#00b0eb"/>
+    <text id="Procesado" transform="translate(132 1628)" fill="#00b0eb" font-size="33" font-family="TitilliumWeb-Regular, Titillium Web"><tspan x="-72.847" y="0">Procesado</tspan></text>
+    <text id="Empacando" transform="translate(434 1628)" fill="#00b0eb" font-size="33" font-family="TitilliumWeb-Regular, Titillium Web"><tspan x="-81.642" y="0">Empacando</tspan></text>
+    <text id="En_Tránsito" data-name="En Tránsito" transform="translate(706 1628)" fill="#00b0eb" font-size="33" font-family="TitilliumWeb-Regular, Titillium Web"><tspan x="-77.5" y="0">En Tránsito</tspan></text>
+    <text id="Entregado" transform="translate(972 1628)" fill="#aaa" font-size="33" font-family="TitilliumWeb-Regular, Titillium Web"><tspan x="-71.791" y="0">Entregado</tspan></text>
+  </g>
+</svg>

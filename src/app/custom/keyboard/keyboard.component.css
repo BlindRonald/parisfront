@@ -1,0 +1,40 @@
+.table {
+    margin: 0 auto!important;
+    width: 50%!important;
+}
+
+.input-teclado {
+    width: 80%;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    border: 5px solid #009de0;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    color: #009de0;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+.teclado {
+    /* font-size: 1.8rem; */
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #00b0eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: titillium web;
+    font-weight: 400;
+}
+
+.modal-content {
+    border: none!important;
+    ;
+}
+
+.table td {
+    padding: .1rem;
+    border: none;
+}

@@ -1,0 +1,11 @@
+{
+    "endpoint": "https://localhost:44333",
+    "printApi": "http://172.16.32.40/apiImpresion/Api/PrintDocument",
+    "printApiVoucher": "http://172.16.32.40/api/Impresion/RealizarImpresion",
+    "api_usabilidad": "httpss://cruzblanca.totalpack.cl/usabilidad/api/v111",
+    "NombreTotem": "Paris",
+    "Sucursal": "Los Militares 1",
+    "Proyecto": "Paris",
+    "url_websocket": "ws://127.0.0.1:8182/"
+  }
+  

@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<form [formGroup]="formBusqueda">
+  <div class="row text-center">
+
+    <div class="col-12 tittle-menu ">
+      BIENVENIDO
+    </div>
+
+    <div class="col-12">
+      <h1>Usuario</h1>
+    </div>
+    <div class="col-8 offset-2 tittle-sub mt-5">
+      Buscar boleta
+
+      <div class="input-group mt-5">
+        <input type="text" class="form-control search" placeholder="Ingrese número de boleta" formControlName="busqueda"
+          (focus)="desplegarAlpha('inputBoleta')" id="busqueda" name="busqueda"
+          [ngClass]="{ 'is-invalid': formBusqueda.hasError('required', 'busqueda') }" required>
+        <div class="input-group-append">
+          <button class="btn btn-search" type="button" [disabled]="!this.formBusqueda.valid" (click)="buscar()">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 offset-2 pt-5">
+
+      <!-- Menasaje sin boleta disponible-->
+      <!-- <h1 class="detalle">
+        <i class="fas fa-exclamation-triangle"></i><br> No tiene boleta disponible
+      </h1> -->
+
+    </div>
+
+  </div>
+</form>
+<div class="botonera text-center">
+  <button>
+    <i class="fas fa-chevron-circle-left"></i> SALIR
+  </button>
+</div>
+
+<app-footer></app-footer>

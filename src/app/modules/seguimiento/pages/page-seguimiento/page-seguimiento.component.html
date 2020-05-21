@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<div class="row text-center">
+  <div class="col-12 tittle-menu ">
+    BIENVENIDO
+  </div>
+  <div class="col-12">
+    <h1>Usuario</h1>
+
+  </div>
+  <div class="col-10 offset-1 mt-2">
+    <hr>
+  </div>
+  <div class="col-8 offset-2 tittle-sub mt-4 mb-4">
+    Boleta
+    <h1>{{ boleta }}</h1>
+  </div>
+  <div class="col-10 offset-1">
+      <hr>
+  </div>
+  <div class="col-8 offset-2 tittle-sub mt-4 mb-4">
+    Seguimiento
+  </div>
+  <div class="col-10 offset-1 mt-3">
+    <img src="assets/img/procesando-3.svg" class="w-100">
+  </div>
+
+  <div class="col-12 mt-5">
+    <h4>Número de Tracking</h4>
+    <h2>{{ sku }}</h2>
+    <h4>Fecha de Entrega</h4>
+    <h2>{{ fecha }}</h2>
+  </div>
+
+</div>
+<div class="botonera text-center">
+  <button (click)="atras()">
+    <i class="fas fa-chevron-circle-left"></i> VOLVER
+  </button>
+</div>

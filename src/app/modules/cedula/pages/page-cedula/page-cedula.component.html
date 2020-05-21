@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<div class="row text-center">
+
+    <div id="carnetdiv" [hidden]="module !== 'carnet'" class="col-12">
+        <app-carnet (changeStep)="onChangeModule($event)"></app-carnet>
+    </div>
+
+    <ng-container *ngIf="module == 'huella'" class="col-12"> <!-- *ngIf="module == 'huella'"  style="visibility: hidden;"-->
+        <app-huella (changeStep)="onChangeModule($event)"></app-huella>
+    </ng-container>
+</div>
